@@ -1,0 +1,14 @@
+body{
+	background-color:var(--bs-gray-400) !important;
+}
+.table{
+	width: 80vw !important;
+	margin-top: 30px;
+}
+.assignment_header{
+	text-align: center;
+	margin-top: 20px;
+}
+td,tr{
+	text-align: center;
+}

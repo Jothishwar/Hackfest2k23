@@ -3,22 +3,12 @@ import { Table,Button } from 'react-bootstrap';
 import {storage} from '../firebase';
 import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
 import UploadFile from './UploadFile';
-
+import './assignments.css';
 
 function Assignments({isStudent}) {
-	const [file, setFile] = useState(null);
 	const [fileList, setFileList] = useState([]);
 	const [dept, setDept] = useState('cse');
 	const [modalShow, setModalShow] = useState(false);
-
-	const uploadAssignment = () =>{
-	  if(file == null) return;
-	  const fileRef = ref(storage,`${dept}/materials/assignment_questions/${file.name}`);
-	  uploadBytes(fileRef,file).then(()=>{
-	  	setModalShow(false);
-	    alert("file uploaded");
-	  });
-	};
 
 	return (
 		<div>
@@ -80,8 +70,7 @@ function Assignments({isStudent}) {
 				<UploadFile 
 					show={modalShow}
 					onHide={()=>setModalShow(false)}
-					upload={uploadAssignment}
-					setFile={setFile}
+					dept={dept}
 				/>
 				</>
 			)}
