@@ -1,6 +1,8 @@
 import React,{ useState } from 'react';
 import './App.css';
 import Materials from './components/Materials';
+import Assignments from './components/Assignments';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {  
 
@@ -8,9 +10,7 @@ function App() {
 
   return (
     <div className="app">
-      <Materials 
-        isStudent={isStudent}
-      />
+      <Assignments />
     </div>
   );
 }
