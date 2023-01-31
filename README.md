@@ -21,11 +21,8 @@ Insert gif or link to demo
 live link -> 
 
 
-![Logo](https://drive.google.com/file/d/1QJwtX1-a1L-uU5-RDhbZBiblRgM-PISt/view?usp=sharing)
-
-
 ## Contributors
 
-<a href="https://github.com/jothishwar/hackfest2k23/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jothishwar/hackfest2k23" />
+<a href="https://github.com/Jothishwar/hackfest2k23/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Jothishwar/hackfest2k23" />
 </a>
