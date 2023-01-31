@@ -35,6 +35,8 @@ function Materials({ isStudent }) {
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Upload File</Form.Label>
               <Form.Control type="file" onChange={(e)=>setFile(e.target.files[0])} />
+            </Form.Group>
+            <Form.Group>
               <Button onClick={uploadFile} >Submit</Button>
             </Form.Group>
           </Form>

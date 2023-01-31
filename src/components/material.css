@@ -7,16 +7,30 @@
 
 .upload_container{
 	margin-top: 40px;
+	border-bottom: 2px solid gray;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
-
+form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:10px;
+}
+form div{
+	margin: 10px;
+}
+.btn{
+	margin-top: 23px;
+}
 .files{
 	width: 90vw;
 	display: flex;
 	flex-wrap: wrap;
-	border: 2px solid red;
 }
 
 .file{
 	margin: 10px 10px;
-	border: 2px solid red;
 }
