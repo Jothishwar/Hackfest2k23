@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import {storage} from './firebase';
+import {storage} from '../firebase';
 import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
 import { v4 } from 'uuid';
 import Files from './Files';
