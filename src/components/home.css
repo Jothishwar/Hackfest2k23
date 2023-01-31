@@ -1,0 +1,81 @@
+body {
+  background: #43cea2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #185a9d, #43cea2);
+}
+
+.App {
+  text-align: center;
+  
+}
+nav{
+  background: rgba( 255, 255, 255, 0.6 ) !important;
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ) !important;
+backdrop-filter: blur( 2px ) !important;
+-webkit-backdrop-filter: blur( 2px );
+border: 1px solid rgba( 255, 255, 255, 0.18 ) !important;
+}
+nav a,nav input,nav button{
+  color: black !important;
+}
+/*Homebuttons*/
+.hero{
+  display: flex;
+  flex-direction: column;
+  background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 50%;
+  border-radius: 30px;
+  margin-left:50px;
+}
+.home {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+.mb-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left:20px;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+h3{
+  padding-top: 10px;
+  margin: 5px;
+}
+.buttn {
+  color: white ;
+  width: 200px;
+  height: 200px;
+  margin: 10px 20px 10px 30px;
+  font-weight: bold !important;
+  font-size: large !important;
+}
+
+/*Announcements*/
+.announcements {
+  padding-top: 20px;
+  /* margin-left: 300px; */
+  padding-left: 0px;
+  background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 2px );
+-webkit-backdrop-filter: blur( 2px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding-bottom: 70px;
+  border-radius: 20px;
+  z-index: -999;
+}
+
+.dummy{
+  width: 50px;
+  height: inherit;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ced4da;
+}
+
+#tit{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.box{
+    height: 100vh;
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.c1,.c2,.c3,.c4{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+}
+
+.c1 #chart,#sci_chart,#che_chart,#avg_chart{
+    border: 3px solid black;
+}
+
