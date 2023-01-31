@@ -1,9 +1,16 @@
+import React,{ useState } from 'react';
 import './App.css';
+import Materials from './components/Materials';
 
-function App() {
+function App() {  
+
+  const [isStudent] = useState(true);
+
   return (
-    <div className="App">
-      hello world!
+    <div className="app">
+      <Materials 
+        isStudent={isStudent}
+      />
     </div>
   );
 }
