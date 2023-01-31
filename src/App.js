@@ -4,7 +4,7 @@ import Materials from './components/Materials';
 
 function App() {  
 
-  const [isStudent] = useState(true);
+  const [isStudent] = useState(false);
 
   return (
     <div className="app">
