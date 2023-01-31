@@ -2,6 +2,7 @@ import React,{ useState } from 'react';
 import {storage} from '../firebase';
 import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
 import { v4 } from 'uuid';
+import { Button,Form } from 'react-bootstrap';
 import Files from './Files';
 import './material.css';
 
@@ -26,9 +27,17 @@ function Materials({ isStudent }) {
       {!isStudent && (
         <>
         <div className='upload_container'>
-          <input type="text" onChange={(e)=>setDept(e.target.value)} />
-          <input type="file" onChange={(e)=>setFile(e.target.files[0])} />
-          <button onClick={uploadFile} >Submit</button>
+          <Form>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Department</Form.Label>
+              <Form.Control type="text" onChange={(e)=>setDept(e.target.value)} />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Upload File</Form.Label>
+              <Form.Control type="file" onChange={(e)=>setFile(e.target.files[0])} />
+              <Button onClick={uploadFile} >Submit</Button>
+            </Form.Group>
+          </Form>
         </div>
         <div className='files'>
           <Files fileList={fileList} setFileList={setFileList} dept={dept} />
