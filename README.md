@@ -8,7 +8,8 @@ EduSync is a one-stop platform for managing classrooms that promises to simplify
 
 React ||
 Bootstrap ||
-Firebase
+Firebase ||
+Chart.js
 
 
 ## Demo
