@@ -12,14 +12,9 @@ Firebase ||
 Chart.js
 
 
-## Demo
-
-Insert gif or link to demo
-
-
 ## Deployment
 
-live link -> 
+live link -> https://master--sparkling-crostata-d5b6c9.netlify.app/
 
 
 ## Contributors
