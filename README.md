@@ -19,6 +19,6 @@ live link -> https://master--sparkling-crostata-d5b6c9.netlify.app/
 
 ## Contributors
 
-<a href="https://github.com/Jothishwar/hackfest2k23/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Jothishwar/hackfest2k23" />
+<a href="https://github.com/Jothishwar/HackFest2k23/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Jothishwar/HackFest2k23" />
 </a>
