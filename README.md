@@ -11,6 +11,12 @@ Bootstrap ||
 Firebase ||
 Chart.js
 
+## Features
+
+- Student Performance Analysis
+- Roadmap recommendations
+- Course recommendations
+- Achievements corner
 
 ## Deployment
 
