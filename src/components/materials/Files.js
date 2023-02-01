@@ -12,13 +12,19 @@ function Files({fileList, setFileList,dept }) {
 					setFileList((prev)=>[...prev,url])
 				})
 			})
-		})		
+		})
 	},[])
 
 	return (
 		<div>
 			{fileList.map((url)=>{
-				return <object data={url} type="application/pdf" width="200" height="150" key={fileList.indexOf(url)} className='file' />
+				return (
+				<>
+				<object data={url} type="application/pdf" width="200" height="150" key={fileList.indexOf(url)} className='file'>
+					<a href={url}>click here</a>
+				</object>
+				</>
+				)
 			})}
 		</div>
 	)

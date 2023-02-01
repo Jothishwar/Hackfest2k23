@@ -1,6 +1,5 @@
 import React,{ useState,useEffect } from 'react'
 import { Button,Form } from 'react-bootstrap';
-import UploadFile from '../assignment/UploadFile';
 import {storage} from '../../firebase';
 import {ref, uploadBytes, getDownloadURL,listAll} from 'firebase/storage';
 import './certificates.css';
@@ -8,7 +7,7 @@ import './certificates.css';
 function Certificates() {
 	const [file, setFile] = useState(null);
 	const [fileList, setFileList] = useState([]);
-  	const [dept, setDept] = useState('cse');
+  	const [dept] = useState('cse');
 
 	const uploadFile = () =>{
 	  if(file == null) return;
@@ -47,7 +46,12 @@ function Certificates() {
 			</div>
 			<div className='files'>
 				{fileList.map((url)=>{
-					return <object data={url} type="application/pdf" width="200" height="150" key={fileList.indexOf(url)} className='file' />
+					return (
+					<>
+					<object data={url} type="application/pdf" width="200" height="150" key={fileList.indexOf(url)} className='file'>
+						<a href={url}>click here</a>
+					</object>
+					</>)
 				})}
 			</div>
 		</div>

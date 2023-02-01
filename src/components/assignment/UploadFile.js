@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
 import { Button,Modal } from 'react-bootstrap';
 import {storage} from '../../firebase';
-import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
+import {ref, uploadBytes} from 'firebase/storage';
 
 function UploadFile(props) {
 	const [file, setFile] = useState(null);
