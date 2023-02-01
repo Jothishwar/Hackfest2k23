@@ -1,6 +1,6 @@
-body{
+/*body{
 	background-color:var(--bs-gray-400) !important;
-}
+}*/
 .table{
 	width: 80vw !important;
 	margin-top: 30px;
@@ -11,4 +11,10 @@ body{
 }
 td,tr{
 	text-align: center;
+}
+
+.assignments_page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

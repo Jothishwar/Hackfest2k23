@@ -1,4 +1,4 @@
-.app{
+.material{
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -13,16 +13,31 @@
 	justify-content: center;
 	align-items: flex-end;
 }
-form{
+.upload_container > form{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin:10px;
+	padding: 30px;
+	background-color: white;
+	border-radius: 30px;
+}
+button.btn.btn-outline-success{
+	padding-bottom: 0px;
+	padding-top: 0;
+	margin-top: 6px;
+	height: 40px;
+}
+input.me-2.form-control{
+	padding: 0px !important;
+	margin-top: 6px;
+	height: 40px;
+	padding-left: 10px;
 }
 form div{
 	margin: 10px;
 }
-.btn{
+.material_btn{
 	margin-top: 23px;
 }
 .files{

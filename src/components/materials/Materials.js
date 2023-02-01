@@ -1,5 +1,5 @@
 import React,{ useState } from 'react';
-import {storage} from '../firebase';
+import {storage} from '../../firebase';
 import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
 import { v4 } from 'uuid';
 import { Button,Form } from 'react-bootstrap';
@@ -23,7 +23,7 @@ function Materials({ isStudent }) {
   };
 
   return (
-    <>
+    <div className='material'>
       {!isStudent && (
         <>
         <div className='upload_container'>
@@ -37,7 +37,7 @@ function Materials({ isStudent }) {
               <Form.Control type="file" onChange={(e)=>setFile(e.target.files[0])} />
             </Form.Group>
             <Form.Group>
-              <Button onClick={uploadFile} >Submit</Button>
+              <Button onClick={uploadFile} className='material_btn'>Submit</Button>
             </Form.Group>
           </Form>
         </div>
@@ -53,7 +53,7 @@ function Materials({ isStudent }) {
         </div>
         </>
       )}
-    </>
+    </div>
   );
 }
 

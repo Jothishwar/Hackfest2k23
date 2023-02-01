@@ -1,6 +1,6 @@
 import React,{ useEffect } from 'react'
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
-import {storage} from '../firebase';
+import {storage} from '../../firebase';
 
 function Files({fileList, setFileList,dept }) {
 	const fileListRef = ref(storage,`${dept}/materials/`)

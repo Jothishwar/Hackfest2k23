@@ -1,13 +1,11 @@
 import React,{ useState } from 'react';
 import { Table,Button } from 'react-bootstrap';
-import {storage} from '../firebase';
-import {ref, uploadBytes, getDownloadURL} from 'firebase/storage';
 import UploadFile from './UploadFile';
 import './assignments.css';
 
 function Assignments({isStudent}) {
-	const [fileList, setFileList] = useState([]);
-	const [dept, setDept] = useState('cse');
+	// const [fileList, setFileList] = useState([]);
+	const [dept] = useState('cse');
 	const [modalShow, setModalShow] = useState(false);
 
 	return (
