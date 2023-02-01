@@ -28,7 +28,8 @@ function Certificates() {
 					setFileList((prev)=>[...prev,url])
 				})
 			})
-		})		
+		})
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	},[])
 
 	return (
