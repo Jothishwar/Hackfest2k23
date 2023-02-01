@@ -1,0 +1,10 @@
+.files{
+	width: 90vw;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.file{
+	margin: 10px 10px;
+}

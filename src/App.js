@@ -7,6 +7,7 @@ import Materials from './components/materials/Materials'
 import Assignments from './components/assignment/Assignments';
 import Roadmap from './components/roadmap/Roadmap';
 import Analysis from './components/analysis/Analysis';
+import Certificates from './components/certificates/Certificates';
 
 function App() {  
   return (
@@ -41,7 +42,9 @@ function App() {
         <Route  path='certificates' element={
           <> 
             <Homenavbar/> 
-             
+            <div className='certificates_page'>
+              <Certificates />
+            </div> 
           </>
         }/> 
         <Route  path='assignments' element={
