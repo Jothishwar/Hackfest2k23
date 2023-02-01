@@ -1,26 +1,37 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './home.css';
+import {Link} from 'react-router-dom';
 
 function Homebuttons() {
+    const handleClick=()=>{
+    }
   return (
     <>
     <div className='home'>
         <div className='hero'>
             <h3>Departments</h3>
             <div className="mb-2">   
-                <Button variant="primary" className='buttn'>
+                <Link to='/analysis'>
+                    <Button variant="primary" className='buttn' onClick={handleClick} >
                     CSE
-                </Button>
-                <Button variant="primary" className='buttn'>
+                    </Button>
+                </Link>
+                <Link to='/analysis'>
+                <Button variant="primary" className='buttn' onClick={handleClick} >
                     CSE IOT
                 </Button>
-                <Button variant="primary" className='buttn'>
+                </Link>
+                <Link to='/analysis'>
+                <Button variant="primary" className='buttn' onClick={handleClick} >
                     CSE CYBERSECURITY
                 </Button>
-                <Button variant="primary" className='buttn'>
+                </Link>
+                <Link to='/analysis'>
+                <Button variant="primary" className='buttn' onClick={handleClick} >
                     CSE AI/ML
                 </Button>
+                </Link>
             </div>
         </div>
         <div className='announcements'>      

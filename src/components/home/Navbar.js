@@ -15,9 +15,11 @@ function Homenavbar() {
       {['sm'].map((expand) => (
         <Navbar key={expand} expand={expand} className="mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">
+            <LinkContainer to='/home'>
+            <Navbar.Brand>
                 <img src={logo} alt='logo' width={'150px'} height={'50px'} />
             </Navbar.Brand>
+            </LinkContainer>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
